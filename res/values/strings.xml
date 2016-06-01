@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_title">Coocaa Weather</string>
+    <string name="citysetting_title">城市管理</string>
+    <string name="citysetting_option_default">设为默认</string>
+    <string name="citysetting_option_delete">删除城市</string>
+    <string name="city_select_title">城市添加</string>
+    <string name="city_select_add_text">添加</string>
+    <string name="add_city_dumplicate">已添加过该城市，无法再次添加</string>
+    <string name="add_city_full">添加城市失败，城市个数已达到最大值，请删除城市后重新添加！</string>
+</resources>

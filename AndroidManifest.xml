@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tianci.weather"
+    android:versionCode="18"
+    android:versionName="2.4.1.0929" >
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name="com.tianci.weather.WeatherApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/weather_title"
+        android:launchMode="singleInstance"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:configChanges="orientation|keyboard|keyboardHidden|locale|layoutDirection|touchscreen|navigation|screenLayout|uiMode" >
+        <activity
+            android:name="com.tianci.weather.WeatherActivity"
+            android:label="@string/weather_title"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.tianci.weather" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tianci.weather.CitySettingActivity"
+            android:label="@string/weather_title"
+            android:theme="@style/Theme.CitySetting">
+        </activity>
+        <activity
+            android:name="com.tianci.weather.CitySelectActivity"
+            android:label="@string/weather_title"
+            android:theme="@style/Theme.CitySetting">
+        </activity>
+    </application>
+
+</manifest>
